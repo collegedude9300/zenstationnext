@@ -29,10 +29,10 @@ export default function Contact() {
     const lastName = document.getElementById("lastName").value;
     if (validateEmail(email) && validateFirstName(firstName) && validateLastName(lastName)) 
     {
+      alert("Form submitted successfully");
       document.getElementById("email").value = "";
       document.getElementById("firstName").value = "";
       document.getElementById("lastName").value = "";
-      alert("Form submitted successfully");
     }
     else if (!validateEmail(email)) {
       alert("Please enter a valid email address");

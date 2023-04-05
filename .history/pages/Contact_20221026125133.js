@@ -27,24 +27,14 @@ export default function Contact() {
     const email = document.getElementById("email").value;
     const firstName = document.getElementById("firstName").value;
     const lastName = document.getElementById("lastName").value;
-    if (validateEmail(email) && validateFirstName(firstName) && validateLastName(lastName)) 
-    {
+    
+    if (validateEmail(email) && validateFirstName(firstName) && validateLastName(lastName)) {
+      alert("Form submitted successfully");
       document.getElementById("email").value = "";
       document.getElementById("firstName").value = "";
       document.getElementById("lastName").value = "";
-      alert("Form submitted successfully");
-    }
-    else if (!validateEmail(email)) {
-      alert("Please enter a valid email address");
-    }
-    else if (!validateFirstName(firstName)) {
-      alert("Please enter a valid first name");
-    }
-    else if (!validateLastName(lastName)) {
-      alert("Please enter a valid last name");
     } 
-    else 
-    {
+    else {
       alert("Form not submitted correctly, please fix your errors");
     }
   }
