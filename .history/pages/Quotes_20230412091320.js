@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function Quotes() 
 {
   {
-    const api_url ="https://zenquotes.io/api/random/53c91a613aa570da150c8d80cf93f06697161c6c";
+    const api_url ="https://zenquotes.io/api/random/7d8df7dcfa04b16cee2fd5c471f78ce7";
     async function getNewQuote(url)
     {
       const response = await fetch(url);
