@@ -24,8 +24,8 @@ return (
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.pages}>
-      <h2> Random Quotes: </h2>
         <div className={styles.container}>
+      <h2> Random Quotes: </h2>
             <h4>
             <p>  &quot; </p>
             <div className="quote" id="quote"></div> 

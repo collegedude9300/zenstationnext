@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import Link from 'next/link'
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -15,18 +16,14 @@ export default function Home() {
         <h1> Welcome to the Zen Station!</h1>
         <br/>
         <h4>Bio: </h4>
-        <Image
-          alt="A black book in a grey background."
-          src="/bout.jpg"
-          width={200}
-          height={200}
-          priority/>
+        <Image  alt="A black book in a grey background."src="/bout.jpg" width="200" height="200"/>
         <br/>
         <Link href="/About">
           <a className="btn btn-success">About Me</a>
         </Link>
         <h4> Nature and Enlightenment: </h4>
         <Image  alt="A small purple flower ."src="/flower.jpg" width="200" height="200"/>
+        <br/>
         <Image  alt="An animated blue cat."src="/cartooncat.png" width="200" height="200"/>
         <br/>
         <Link href="/MenuNature">

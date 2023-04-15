@@ -16,11 +16,11 @@ export default function Home() {
         <br/>
         <h4>Bio: </h4>
         <Image
-          alt="A black book in a grey background."
+        alt="A black book in a grey background."
           src="/bout.jpg"
-          width={200}
-          height={200}
-          priority/>
+           width={200}
+            height={200}
+             priority/>
         <br/>
         <Link href="/About">
           <a className="btn btn-success">About Me</a>

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import Link from 'next/link'
-export default function Cat() {
+export default function Flower() {
 return (
     <div className={styles.container}>
       <Head>
@@ -12,22 +12,13 @@ return (
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.pages}>
-      <h1>Zen Center: Cats</h1>
-        <Image
-         src="/cat_one.jpg"
-          alt="cat"
-          width="200px"
-          height="200px"
-          priority/>
-        <Image
-          src="/cat_two.jpg"
-          alt="cat"
-          width="200px"
-          height="200px"/>
+      <h1>Zen Center: Flowers</h1>
+        <Image src="/flower_one.jpg" alt="flower"width="200px"height="200px"/>
+        <Image src="/flower_two.jpg" alt="flower" width="200px"height="200px"/>
         <br/>
-        <h5>Do you want to see the flowers?</h5>
-        <Link href="/Flower"> 
-          <a className="btn btn-info">Flowers</a>
+        <h5>Do you want to visit the cats?</h5>
+        <Link href="/Cat"> 
+          <a className="btn btn-dark">Cats</a>
           </Link>
         <h5>Do you want to go back to the home page?</h5>
         <Link href="/"> 

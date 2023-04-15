@@ -31,7 +31,7 @@ return (
           </Link>
         <h5>Do you want to go back to the home page?</h5>
         <Link href="/"> 
-        <a className="btn btn-success">Home</a>
+        <a class="btn btn-success">Home</a>
         </Link>
       </main>
       </div>

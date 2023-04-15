@@ -12,7 +12,7 @@ export default function Quotes()
       const response = await fetch(url);
       var data = await response.json();
       console.log(data);
-      document.getElementById("quote").innerHTML = data[0].q;
+      document.getElementById("quoteDiv").innerHTML = data[0].q;
       document.getElementById("author").innerHTML = data[0].a;
     }
     getNewQuote(api_url);
@@ -27,9 +27,9 @@ return (
       <h2> Random Quotes: </h2>
         <div className={styles.container}>
             <h4>
-            <p>  &quot; </p>
-            <div className="quote" id="quote"></div> 
-            <p> &quot; </p>
+            <p> &quot;</p>
+            <div className="quoteDiv" id="quote"></div> 
+            <p> &quot;</p>
             </h4>
             <h5><p className="author" id="author"></p> </h5>     
             <hr/>

@@ -5,7 +5,12 @@
   background-color: #43e0d3;
   min-height: 100vh;
 }
-
+.errorMessage {
+                
+  color: red;
+  font-size: 20px ;
+  
+}
 .quoteDiv {
   font-size: 50px;
   color: rgb(243, 14, 7);

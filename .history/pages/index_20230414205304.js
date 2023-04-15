@@ -15,12 +15,7 @@ export default function Home() {
         <h1> Welcome to the Zen Station!</h1>
         <br/>
         <h4>Bio: </h4>
-        <Image
-          alt="A black book in a grey background."
-          src="/bout.jpg"
-          width={200}
-          height={200}
-          priority/>
+        <Image  alt="A black book in a grey background." priority src="/bout.jpg" width="200" height="200"/>
         <br/>
         <Link href="/About">
           <a className="btn btn-success">About Me</a>

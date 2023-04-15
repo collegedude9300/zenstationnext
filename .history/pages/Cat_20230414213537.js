@@ -19,11 +19,7 @@ return (
           width="200px"
           height="200px"
           priority/>
-        <Image
-          src="/cat_two.jpg"
-          alt="cat"
-          width="200px"
-          height="200px"/>
+        <Image src="/cat_two.jpg" alt="cat" width="200px"height="200px"/>
         <br/>
         <h5>Do you want to see the flowers?</h5>
         <Link href="/Flower"> 
@@ -31,7 +27,7 @@ return (
           </Link>
         <h5>Do you want to go back to the home page?</h5>
         <Link href="/"> 
-        <a className="btn btn-success">Home</a>
+        <a class="btn btn-success">Home</a>
         </Link>
       </main>
       </div>

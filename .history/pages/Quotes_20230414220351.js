@@ -27,7 +27,8 @@ return (
       <h2> Random Quotes: </h2>
         <div className={styles.container}>
             <h4>
-            <p>  &quot; </p>
+            <div className="quote" id="quote"></div>
+            <p> &quot; </p>
             <div className="quote" id="quote"></div> 
             <p> &quot; </p>
             </h4>
