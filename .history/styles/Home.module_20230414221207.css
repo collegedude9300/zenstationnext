@@ -1,9 +1,9 @@
 .container {
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 .pages{
   background-color: #43e0d3;
-  min-height: 100vh;
+  min-height: 300vh;
 }
 
 .quoteDiv {
