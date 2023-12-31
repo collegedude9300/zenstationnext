@@ -22,8 +22,6 @@ export default function Home() {
           <Image
             alt="A book about Zen meditation."
             src="/bout.jpg"
-            width="200"
-            height="200"
             className={styles.image}
             priority/>
         </div>

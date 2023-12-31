@@ -1,6 +1,4 @@
-
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import Link from 'next/link'
@@ -21,9 +19,9 @@ While we navigate through our components of our busy lives each day, we do not f
 Studies show how mindfulness is beneficial to the body, mind, and soul.
 </p>
 <h5>Do you want to go back to the home page?</h5>
-<Link href="/"> 
-<a className="btn btn-success">Home</a>
-</Link>
+          <Link href="/">
+          <button className="btn btn-success">Home</button>
+        </Link>
 </main>
 </div>
 )}
