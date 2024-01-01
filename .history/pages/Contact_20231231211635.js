@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
+import { EMAIL_REGEX, NAME_REGEX } from './constants';
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import Link from 'next/link';
 export default function Contact() {
-  const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-  const NAME_REGEX = /^[a-zA-Z ]{2,30}$/;
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [emailError, setEmailError] = useState("");

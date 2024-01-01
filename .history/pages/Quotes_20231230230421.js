@@ -1,10 +1,10 @@
+import { useState, useEffect } from 'react';
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.css'
 import Link from 'next/link'
 
-const api_url ="https://zenquotes.io/api/random/";
+const api_url ="https://zenquotes.io/api/random/7d8df7dcfa04b16cee2fd5c471f78ce7";
 async function getNewQuote(url)
 {
   const response = await fetch(url);
@@ -45,8 +45,8 @@ export default function Quotes()
         </div>
         <div/>
         <h5>Do you want to go back to the home page?</h5>
-        <Link href="/">
-          <button className="btn btn-success">Home</button>
+        <Link href="/"> 
+          <a className="btn btn-success">Home</a>
         </Link>
       </main>
     </div>

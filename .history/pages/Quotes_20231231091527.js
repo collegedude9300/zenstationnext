@@ -45,8 +45,8 @@ export default function Quotes()
         </div>
         <div/>
         <h5>Do you want to go back to the home page?</h5>
-        <Link href="/">
-          <button className="btn btn-success">Home</button>
+        <Link href="/Contact">
+          <button className="btn btn-success">Contact Me</button>
         </Link>
       </main>
     </div>
