@@ -1,18 +1,13 @@
 .container {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 .pages{
   background-color: #43e0d3;
   min-height: 100vh;
 }
-.errorMessage {
-                
-  color: red;
-  font-size: 20px ;
-  
-}
-.quote {
-  font-size: 35px;
+
+.quoteDiv {
+  font-size: 50px;
   color: rgb(243, 14, 7);
 }
 .successMessage {
@@ -21,6 +16,11 @@
   font-size: 30px;
   display:none;
   margin-bottom:20px; 
+}
+.form-control{
+  width: 100%;
+  padding: 6px 6px;
+  margin: 8px 0;
 }
 .login {
   min-height: 100vh;

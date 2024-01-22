@@ -1,9 +1,9 @@
 .container {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 .pages{
   background-color: #43e0d3;
-  min-height: 10vh;
+  min-height: 100vh;
 }
 
 .quoteDiv {
@@ -17,6 +17,7 @@
   display:none;
   margin-bottom:20px; 
 }
+
 .login {
   min-height: 100vh;
   padding: 4rem 0;

@@ -1,5 +1,5 @@
 .container {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 .pages{
   background-color: #43e0d3;
@@ -16,6 +16,11 @@
   font-size: 30px;
   display:none;
   margin-bottom:20px; 
+}
+.form-control{
+  width: 100%;
+  padding: 6px 20px;
+  margin: 8px 0;
 }
 .login {
   min-height: 100vh;

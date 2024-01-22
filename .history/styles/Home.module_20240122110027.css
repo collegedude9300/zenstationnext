@@ -1,5 +1,5 @@
 .container {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 .pages{
   background-color: #43e0d3;
@@ -17,6 +17,7 @@
   display:none;
   margin-bottom:20px; 
 }
+
 .login {
   min-height: 100vh;
   padding: 4rem 0;
@@ -98,7 +99,7 @@
 
 .grid {
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
