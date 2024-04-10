@@ -14,6 +14,7 @@ export default function Quotes() {
 
   return (
     <div>
+      
       <h2>Random Quotes:</h2>
       <h4>
         <p> &quot; </p>

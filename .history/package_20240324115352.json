@@ -17,7 +17,6 @@
     "bootstrap": "^5.2.2",
     "constants": "^0.0.2",
     "framer-motion": "^10.11.6",
-    "inspirational-quotes": "^2.0.1",
     "jquery": "^3.6.1",
     "next": "12.3.1",
     "react": "18.2.0",
@@ -26,8 +25,5 @@
   "devDependencies": {
     "eslint": "8.24.0",
     "eslint-config-next": "12.3.1"
-  },
-  "resolutions": {
-    "**/next": "13.1.1"
   }
 }
