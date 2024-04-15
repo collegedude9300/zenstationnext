@@ -1,51 +1,29 @@
 import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.css'
+import InspirationalQuotes from 'inspirational-quotes'
 import Link from 'next/link';
 export default function Quotes() {
   const [quote, setQuote] = useState();
 
   useEffect(() => {
     getNewQuote();
-  }, []);
+  }, [quote]);
 
   function getNewQuote() {
     fetch('https://type.fit/api/quotes')
       .then((response) => response.json())
       .then((data) => {
         if (Array.isArray(data) && data.length > 0) {
-          const randomIndex = Math.floor(Math.random() * data.length);
-          setQuote(data[randomIndex]);
+          setQuote(new InspirationalQuotes(data).random());
         } else {
           console.log('Invalid data format');
         }
+        setTimeout(getNewQuote, 60 * 1000);
       })
       .catch((error) => {
         console.log(`Error: ${error}`);
+        setTimeout(getNewQuote, 5000); // Retry after 5 seconds
       });
-  }
-
-  useEffect(() => {
-    const timer = setTimeout(getNewQuote, 60 * 1000);
-
-    return () => {
-      clearTimeout(timer);
-    };
-  }, []);
-
-  let retryDelay = 5000; // Initial retry delay in milliseconds
-  let maxRetryDelay = 60000; // Maximum retry delay in milliseconds
-  let retryCount = 0; // Number of retries
-  let maxRetries = 10; // Maximum number of retries
-
-  function handleFetchError(error) {
-    console.log(`Error: ${error}`);
-    if (retryCount < maxRetries) {
-      retryDelay = Math.min(retryDelay * 2, maxRetryDelay); // Exponential backoff
-      retryCount++;
-      setTimeout(getNewQuote, retryDelay);
-    } else {
-      console.log('Max retries exceeded');
-    }
   }
 
   return (
@@ -54,10 +32,17 @@ export default function Quotes() {
       <blockquote>{quote ? `"${quote.text}" - ${quote.author}` : "Loading..."}</blockquote>
       <p>
         <button onClick={getNewQuote}>Get New Quote</button>
+        {' '}
+        {quote && (
+          <div>
+            <p>{quote.text} Get Quote</p>
+            <p>- {quote.author} Get author</p>
+          </div>
+        )}
         <Link href="/">
           <button className="btn btn-success">Home</button>
         </Link>
-      </p>
+        </p>
     </div>
   );
 }

@@ -54,6 +54,13 @@ export default function Quotes() {
       <blockquote>{quote ? `"${quote.text}" - ${quote.author}` : "Loading..."}</blockquote>
       <p>
         <button onClick={getNewQuote}>Get New Quote</button>
+        {' '}
+        {quote && (
+          <div>
+            <p>{quote.text} Get Quote</p>
+            <p>- {quote.author} Get author</p>
+          </div>
+        )}
         <Link href="/">
           <button className="btn btn-success">Home</button>
         </Link>
