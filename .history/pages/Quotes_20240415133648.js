@@ -51,16 +51,14 @@ export default function Quotes() {
 
   return (
     <div className={styles.container} id="quote-box">
-      <main className={styles.pages}>
       <h2>Inspiring Quotes</h2>
       <blockquote>{quote ? `"${quote.text}" - ${quote.author}` : "Loading..."}</blockquote>
       <p>
         <button onClick={getNewQuote}>Get New Quote</button>
         <Link href="/">
           <button className="btn btn-success">Home</button>
-        </Link> 
-        </p>
-        </main>  
+        </Link>
+      </p>
     </div>
   );
 }
