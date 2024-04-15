@@ -22,6 +22,8 @@ export default function Home() {
           <Image
             alt="A book about Zen meditation."
             src="/bout.jpg"
+            width="200"
+            height="200"
             className={styles.image}
             priority/>
         </div>
@@ -32,12 +34,13 @@ export default function Home() {
         <section>
           <header>Nature and Enlightenment:</header>
         </section>
+        <p>
+          Nature and enlightenment are two of the most important concepts in the world.
+          They are the basis of everything we do, and they are the basis of our daily lives.
+          They are the basis of our existence.
+          </p>
         <Image  alt="A small purple flower." src="/flower.jpg" width="200" height="200"/>
-        <Image  alt="An animated blue cat." src="/cartooncat.png" width="200" height="200"/>
         <div className={styles.spacing}></div>
-        <Link href="/MenuNature">
-          <button className="btn btn-success">Menu for the Nature site</button>
-        </Link>
         <section>
           <header>Quotes:</header>
         </section>

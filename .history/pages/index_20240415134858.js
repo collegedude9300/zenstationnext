@@ -37,9 +37,13 @@ export default function Home() {
         <p>
           Nature and enlightenment are two of the most important concepts in the world.
           They are the basis of everything we do, and they are the basis of our daily lives.
+          They are the basis of our existence.
+          </p>
         <Image  alt="A small purple flower." src="/flower.jpg" width="200" height="200"/>
-        <Image  alt="An animated blue cat." src="/cartooncat.png" width="200" height="200"/>
         <div className={styles.spacing}></div>
+        <Link href="/Nature">
+          <button className="btn btn-success">Nature</button>
+        </Link>
         <section>
           <header>Quotes:</header>
         </section>

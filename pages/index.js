@@ -40,8 +40,10 @@ export default function Home() {
           They are the basis of our existence.
           </p>
         <Image  alt="A small purple flower." src="/flower.jpg" width="200" height="200"/>
-        <Image  alt="An animated blue cat." src="/cartooncat.png" width="200" height="200"/>
         <div className={styles.spacing}></div>
+        <Link href="/Nature">
+          <button className="btn btn-success">Nature</button>
+        </Link>
         <section>
           <header>Quotes:</header>
         </section>
